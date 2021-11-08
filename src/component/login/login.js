@@ -15,10 +15,16 @@ export default function Login (){
       console.log('Confirm Password :',passwordRef.current.value)
 
       try {
-        alert('Succesful Login')
+        if(usernameRef.current.value!== ""){
+          alert('Succesful Login')
         history.push("/todo")
+        }
+        else {
+          throw(error)
+        }
+        
       } catch (error){
-        setError("Login Failed")
+        setError("Please input Credential")
       }
       
   }

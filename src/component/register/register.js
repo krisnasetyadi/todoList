@@ -17,10 +17,15 @@ export default function Register (){
         console.log('Confirm Password :',passwordRef.current.value)
 
         try{
+          if(usernameRef.current.value && emailRef.current.value && passwordRef.current.value !==""){
             alert('Succesfull Registered')
             history.push("/login")
+          } else {
+            throw(error)
+          }
+            
         }catch(error){
-            setError("Register Failed")
+            setError("Missing Something ?")
         }
     }
     return (

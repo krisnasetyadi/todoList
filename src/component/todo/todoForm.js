@@ -14,7 +14,7 @@ export default function FormTodo ({setInputText,todos,setTodos,inputText}){
     }
     return (
         <form>
-            <input type='text' class='todo-input' onChange={inputHandler} />
+            <input type='text' className='todo-input' onChange={inputHandler} />
             <button value={inputText} onClick={submitHandler} className='todo-button' type='submit'>
                 add
             </button>
