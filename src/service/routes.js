@@ -1,6 +1,7 @@
 import Login from "../component/login/login";
 import Register from "../component/register/register";
-import Todo from "../component/todolist/todo";
+import TodoPage from "../component/todo/todoPage";
+// import Todo from "../component/todolist/todo";
 
 const routes =[
     {
@@ -14,7 +15,7 @@ const routes =[
     },
     {
         path:'/todo',
-        component:<Todo/>
+        component:<TodoPage/>
     }
 ]
 export default routes
